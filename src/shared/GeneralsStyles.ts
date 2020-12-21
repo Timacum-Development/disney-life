@@ -41,7 +41,6 @@ export default createGlobalStyle`
 		height: 100%;
 		min-height: 100%;
 		margin: 0;
-		font-family: 'Playfair Display', serif;
 		box-sizing: border-box;
 		font-size: 16px;
 		height: 100%;
@@ -55,6 +54,7 @@ export default createGlobalStyle`
 		display: flex;
 		flex-direction: column;
 		height: 100%;
+		background-color: wheat;
 	}
 
 	main {
@@ -62,8 +62,15 @@ export default createGlobalStyle`
 		width: 100%;
 	}
 
+	.container {
+		max-width: 1800px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
 	a {
 		display: inline-block;
+		cursor: pointer;
 	}
 
 	h1,
