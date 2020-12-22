@@ -35,8 +35,8 @@ export const RedShape = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 72%;
-  max-width: 1061px;
+  width: 100%;
+  /* max-width: 1061px; */
   height: 981px;
   background-color: ${color.lightRed};
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 30% 90%);
@@ -44,7 +44,7 @@ export const RedShape = styled.div`
 
 export const Devices = styled.div`
   position: relative;
-  left: 150px;
+  left: 200px;
   z-index: 20;
   top: 130px;
   transform: rotate(-10deg);
@@ -64,9 +64,9 @@ export const Iphone = styled.div`
   background: url(${Device2}) no-repeat center;
   background-size: contain;
   position: absolute;
-  right: 40px;
+  right: -50px;
   bottom: -120px;
-  transform: rotate(5deg);
+  transform: rotate(4deg);
   filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.5));
 `;
 
