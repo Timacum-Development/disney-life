@@ -89,7 +89,7 @@ export const IphoneImg = styled.img`
 `;
 
 export const HeroIntro = styled.div`
-  width: 50%;
+  width: 45%;
   margin-left: 30px;
 `;
 
