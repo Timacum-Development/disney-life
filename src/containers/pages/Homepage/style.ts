@@ -41,9 +41,10 @@ export const RedShape = styled.div`
 
 export const Devices = styled.div`
   position: relative;
-  left: 300px;
+  left: 150px;
   z-index: 20;
-  top: 150px;
+  top: 130px;
+  transform: rotate(-10deg);
 `;
 
 export const Ipad = styled.div`
@@ -51,7 +52,7 @@ export const Ipad = styled.div`
   height: 581px;
   background: url(${Device1}) no-repeat center;
   background-size: contain;
-  transform: rotate(-10deg);
+  filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.5));
 `;
 
 export const Iphone = styled.div`
@@ -60,19 +61,26 @@ export const Iphone = styled.div`
   background: url(${Device2}) no-repeat center;
   background-size: contain;
   position: absolute;
-  right: 0px;
-  bottom: -70px;
-  transform: rotate(-4deg);
+  right: 40px;
+  bottom: -120px;
+  transform: rotate(5deg);
+  filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.5));
 `;
 
 export const IpadImg = styled.img`
-  display: none;
-  width: 671px;
-  height: 553px;
+  display: block;
+  width: 582px;
+  height: auto;
+  position: relative;
+  left: 84px;
+  top: 77px;
 `;
 
 export const IphoneImg = styled.img`
-  display: none;
-  width: 401px;
-  height: 247px;
+  display: block;
+  width: 382px;
+  height: auto;
+  position: relative;
+  top: 26px;
+  left: 65px;
 `;

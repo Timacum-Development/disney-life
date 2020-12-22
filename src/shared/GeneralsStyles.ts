@@ -125,6 +125,7 @@ export default createGlobalStyle`
   		border-radius: 32px;
 		text-transform: uppercase;
 		letter-spacing: 2px;
+		filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.5));
 		
 	}
 `;
