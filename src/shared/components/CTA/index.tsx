@@ -2,15 +2,17 @@ import React from "react";
 import { CtaWhite, CtaBlue, CtaGreen } from "./style";
 
 const CallToAction = (props: any) => {
-  const { white, bluecta, text } = props;
+  const { white, bluecta, text, style } = props;
   return (
     <React.Fragment>
       {white ? (
-        <CtaWhite>{text}</CtaWhite>
+        <CtaWhite className="cta" style={style}>
+          {text}
+        </CtaWhite>
       ) : !white && bluecta ? (
-        <CtaBlue>{text}</CtaBlue>
+        <CtaBlue className="cta">{text}</CtaBlue>
       ) : (
-        <CtaGreen>{text}</CtaGreen>
+        <CtaGreen className="cta">{text}</CtaGreen>
       )}
     </React.Fragment>
   );

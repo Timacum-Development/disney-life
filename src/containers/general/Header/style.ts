@@ -6,6 +6,8 @@ export const HeaderWrapper = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 49px 260px 0;
+  position: relative;
+  z-index: 10;
 `;
 
 export const InsideWrap = styled.div`

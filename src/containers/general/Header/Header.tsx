@@ -6,7 +6,7 @@ import Link from "../../../shared/components/Page Link";
 import CallToAction from "../../../shared/components/CTA";
 
 // Assets
-import LogIn from "../../../assets/login.png";
+import LogIn from "../../../assets/login2.png";
 
 const Header = () => {
   return (
@@ -15,10 +15,14 @@ const Header = () => {
         <Logo headerlogo />
       </a>
       <InsideWrap>
-        <Link text="Buy a Gift" style={{ marginRight: "48px" }} />
-        <Link text="Radeem a Gift" style={{ marginRight: "48px" }} />
+        <Link headerlink text="Buy a Gift" style={{ marginRight: "48px" }} />
+        <Link headerlink text="Radeem a Gift" style={{ marginRight: "48px" }} />
         <Login src={LogIn} />
-        <CallToAction white text="Free Trial" />
+        <CallToAction
+          style={{ padding: "17px 40px" }}
+          white
+          text="Free Trial"
+        />
       </InsideWrap>
     </HeaderWrapper>
   );

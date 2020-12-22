@@ -3,7 +3,7 @@ import { color } from "../../styles";
 
 export const HeaderLink = styled.a`
   font-size: 1rem;
-  font-family: "gothamregular";
+  font-family: "Gotham", sans;
   font-weight: 500;
   color: ${color.white};
 `;

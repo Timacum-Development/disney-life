@@ -3,7 +3,7 @@ import { color } from "./styles";
 
 export default createGlobalStyle`
 	@font-face {
-		font-family: 'gothamregular';
+		font-family: 'gothamregular', sans;
 		src: url('gotham_regular-webfont.woff2') format('woff2'),
 			url('gotham_regular-webfont.woff') format('woff');
 		font-weight: normal;
@@ -11,7 +11,7 @@ export default createGlobalStyle`
 	}
 
 	@font-face {
-    font-family: 'Gotham Book';
+    font-family: 'Gotham Book', sans;
     src: url('Gotham-Book.woff2') format('woff2'),
         url('Gotham-Book.woff') format('woff');
     font-weight: normal;
@@ -20,7 +20,7 @@ export default createGlobalStyle`
 	}
 
 	@font-face {
-    font-family: 'Gotham';
+    font-family: 'Gotham', sans;
     src: url('Gotham-Medium.woff2') format('woff2'),
         url('Gotham-Medium.woff') format('woff');
     font-weight: 500;
@@ -29,7 +29,7 @@ export default createGlobalStyle`
 	}
 
 	@font-face {
-    font-family: 'Gotham';
+    font-family: 'Gotham', sans;
     src: url('Gotham-Bold.woff2') format('woff2'),
         url('Gotham-Bold.woff') format('woff');
     font-weight: bold;
@@ -54,7 +54,6 @@ export default createGlobalStyle`
 		display: flex;
 		flex-direction: column;
 		height: 100%;
-		background-color: wheat;
 	}
 
 	main {
@@ -68,6 +67,12 @@ export default createGlobalStyle`
 		margin: 0 auto;
 	}
 
+	p,
+	a {
+		font-family: 'Gotham', sans;
+		font-weight: 500;
+	}
+
 	a {
 		display: inline-block;
 		cursor: pointer;
@@ -75,7 +80,7 @@ export default createGlobalStyle`
 
 	h1,
 	h2 {
-		font-family: 'Gotham';
+		font-family: 'Gotham', sans;
 		font-weight: bold;
 	}
 
@@ -112,4 +117,14 @@ export default createGlobalStyle`
 		color: ${color.darkGrey};
 	}
 
+	.cta {
+		font-weight: 1rem;
+		font-family: 'Gotham', sans;
+		font-weight: bold;
+		padding: 26px 40px;
+  		border-radius: 32px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		
+	}
 `;
