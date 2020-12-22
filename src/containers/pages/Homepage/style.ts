@@ -32,6 +32,9 @@ export const YellowShape = styled.div`
 `;
 
 export const RedShape = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 72%;
   max-width: 1061px;
   height: 981px;
@@ -83,4 +86,21 @@ export const IphoneImg = styled.img`
   position: relative;
   top: 26px;
   left: 65px;
+`;
+
+export const HeroIntro = styled.div`
+  width: 50%;
+  margin-left: 30px;
+`;
+
+export const SubscribeWrap = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 29px;
+`;
+
+export const HeadingWrap = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 `;

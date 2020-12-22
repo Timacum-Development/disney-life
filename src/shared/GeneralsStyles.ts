@@ -68,6 +68,17 @@ export default createGlobalStyle`
 	}
 
 	p,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin: 0;
+	}
+
+
+	p,
 	a {
 		font-family: 'Gotham', sans;
 		font-weight: 500;
@@ -91,6 +102,7 @@ export default createGlobalStyle`
 
 	h1 {
 		font-size: 5rem;
+		margin-bottom: 58px;
 	}
 
 	h2 {
@@ -99,7 +111,10 @@ export default createGlobalStyle`
 	}
 	
 	h3 {
+		font-family: 'gothamregular', sans;
+		font-weight: normal;
 		font-size: 2.8125rem;
+		margin-bottom: 23px;
 
 	}
 
@@ -125,7 +140,7 @@ export default createGlobalStyle`
   		border-radius: 32px;
 		text-transform: uppercase;
 		letter-spacing: 2px;
-		filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.5));
-		
+		filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.5));
+		cursor: pointer;
 	}
 `;

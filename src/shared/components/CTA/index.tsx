@@ -10,9 +10,13 @@ const CallToAction = (props: any) => {
           {text}
         </CtaWhite>
       ) : !white && bluecta ? (
-        <CtaBlue className="cta">{text}</CtaBlue>
+        <CtaBlue className="cta" style={style}>
+          {text}
+        </CtaBlue>
       ) : (
-        <CtaGreen className="cta">{text}</CtaGreen>
+        <CtaGreen className="cta" style={style}>
+          {text}
+        </CtaGreen>
       )}
     </React.Fragment>
   );
