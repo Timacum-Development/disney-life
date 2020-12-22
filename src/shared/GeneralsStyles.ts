@@ -125,6 +125,8 @@ export default createGlobalStyle`
 	}
 
 	h5 {
+		font-family: 'Gotham', sans;
+		font-weight: 500;
 		font-size: 1.25rem;
 		color: ${color.darkGrey};
 	}
@@ -145,4 +147,13 @@ export default createGlobalStyle`
 		filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.5));
 		cursor: pointer;
 	}
+
+	.green-heading {
+		font-family: 'gothamregular', sans;
+		color: ${color.white};
+		font-weight: 400;
+		margin-bottom: 28px;
+	}
+
+
 `;

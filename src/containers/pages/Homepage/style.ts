@@ -3,6 +3,7 @@ import { color } from "../../../shared/styles";
 
 import Device1 from "../../../assets/ipad3.png";
 import Device2 from "../../../assets/iphone2.png";
+import GingerGirl from "../../../assets/ginger-girl.png";
 
 export const Hero = styled.section`
   display: flex;
@@ -160,10 +161,63 @@ export const OfferCard = styled.div`
 export const SidePhoto = styled.img`
   display: block;
   position: absolute;
-  right: 0;
-  top: -60%;
+  right: 51px;
+  top: -40%;
 `;
 
 export const CtaWrapper = styled.div`
   text-align: center;
+  margin-bottom: 83px;
+`;
+
+export const Cartoon = styled.section`
+  display: flex;
+  position: relative;
+`;
+
+export const GreenShape = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 761px;
+  height: 661px;
+  background-color: ${color.green};
+  clip-path: polygon(0% 0%, 85% 10%, 100% 90%, 0% 100%);
+`;
+
+export const GreenText = styled.div`
+  max-width: 405px;
+  margin-left: 27px;
+`;
+
+export const BoldTxt = styled.span`
+  font-family: "Gotham", sans;
+  font-weight: bold;
+  color: ${color.white};
+`;
+
+export const WhiteText = styled.p`
+  font-size: 0.875rem;
+  font-family: "Gotham", sans;
+  font-weight: 500;
+  color: ${color.white};
+  margin-bottom: 57px;
+`;
+
+export const CartoonBg = styled.div`
+  width: 1112px;
+  height: 664px;
+  background: url(${GingerGirl}) no-repeat top;
+  background-position: cover;
+  background-size: center;
+  clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 80%);
+`;
+
+export const SidePhotoSecond = styled.img`
+  display: block;
+  position: absolute;
+  left: 136px;
+  top: -200px;
+  z-index: 50;
+  filter: drop-shadow(0 5px 5px ${color.black});
 `;

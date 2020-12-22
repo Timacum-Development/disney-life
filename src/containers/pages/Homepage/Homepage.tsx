@@ -21,6 +21,13 @@ import {
   Slider,
   SidePhoto,
   CtaWrapper,
+  Cartoon,
+  GreenShape,
+  CartoonBg,
+  GreenText,
+  BoldTxt,
+  WhiteText,
+  SidePhotoSecond,
 } from "./style";
 
 //Assets
@@ -32,6 +39,7 @@ import Logo3 from "../../../assets/disney-xd.png";
 import Logo4 from "../../../assets/disney-channel.png";
 import Logo5 from "../../../assets/disney-junior.png";
 import SideImg from "../../../assets/side-photo1.png";
+import SideImg2 from "../../../assets/layer-stitch.png";
 
 // Components
 import CallToAction from "../../../shared/components/CTA";
@@ -75,8 +83,10 @@ const Homepage = () => {
       </Hero>
       <Subscription>
         <RectangleWrap>
-          <Rectangle style={{ marginRight: "20px" }} />
-          <Rectangle first />
+          <Rectangle
+            style={{ marginRight: "20px", backgroundColor: "#ff4b64" }}
+          />
+          <Rectangle first style={{ backgroundColor: "#5f94ff" }} />
         </RectangleWrap>
         <HeadingWrap>
           <h2>One Subscription.</h2>
@@ -129,6 +139,37 @@ const Homepage = () => {
           <BottomText text="Now only £4.99 per month." />
         </CtaWrapper>
       </Subscription>
+      <Cartoon>
+        <SidePhotoSecond src={SideImg2} />
+        <GreenShape>
+          <Rectangle
+            first
+            style={{
+              backgroundColor: "#ff4b64",
+              position: "relative",
+              top: "-100px",
+            }}
+          />
+          <GreenText>
+            <h2 className="green-heading">
+              <BoldTxt>Be Brave.</BoldTxt> Don’t just take
+              <BoldTxt> our word</BoldTxt> for it.
+            </h2>
+            <WhiteText>
+              Unlimited Disney, what's not to love and enjoy!
+            </WhiteText>
+            <SubscribeWrap>
+              <CallToAction
+                white
+                text="Free 7 days"
+                style={{ marginRight: "29px", color: "#9dcb45" }}
+              />
+              <Rectangle style={{ backgroundColor: "#ffca2a" }} />
+            </SubscribeWrap>
+          </GreenText>
+        </GreenShape>
+        <CartoonBg />
+      </Cartoon>
     </React.Fragment>
   );
 };
