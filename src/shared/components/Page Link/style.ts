@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { color } from "../../styles";
 
 export const HeaderLink = styled.a`

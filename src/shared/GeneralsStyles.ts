@@ -109,6 +109,7 @@ export default createGlobalStyle`
 	h2 {
 		font-size: 3.125rem;
 		color: ${color.black};
+		margin-bottom: 18px;
 	}
 	
 	h3 {

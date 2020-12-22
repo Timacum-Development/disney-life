@@ -11,3 +11,9 @@ export const FooterLogo = styled.img`
   width: 201px;
   height: 56px;
 `;
+
+export const ChannelLogo = styled.img`
+  display: block;
+  width: auto;
+  height: auto;
+`;

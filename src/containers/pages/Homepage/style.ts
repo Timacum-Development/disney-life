@@ -100,7 +100,70 @@ export const SubscribeWrap = styled.div`
 `;
 
 export const HeadingWrap = styled.div`
+  text-align: center;
+  margin-bottom: 75px;
+`;
+
+export const Subscription = styled.section`
+  position: relative;
+`;
+
+export const RectangleWrap = styled.div`
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 80px;
+`;
+
+export const LogoWrap = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1281px;
+  margin: 0 auto;
+  position: relative;
+`;
+
+export const Slider = styled.div`
+  width: 841px;
+  height: 3px;
+  background-color: ${color.grey};
+  margin: 80px auto;
+  position: relative;
+
+  &:before {
+    content: "";
+    width: 141px;
+    height: 11px;
+    background-color: ${color.darkerGrey};
+    position: absolute;
+    border-radius: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+`;
+
+export const Offer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 260px 0;
+  margin-bottom: 81px;
+`;
+
+export const OfferCard = styled.div`
+  width: 33.33%;
+`;
+
+export const SidePhoto = styled.img`
+  display: block;
+  position: absolute;
+  right: 0;
+  top: -60%;
+`;
+
+export const CtaWrapper = styled.div`
+  text-align: center;
 `;
