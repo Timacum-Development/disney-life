@@ -6,9 +6,13 @@ const Link = (props: any) => {
   return (
     <React.Fragment>
       {headerlink ? (
-        <HeaderLink style={style}>{text}</HeaderLink>
+        <HeaderLink style={style} href="/">
+          {text}
+        </HeaderLink>
       ) : (
-        <MainLink style={style}>{text}</MainLink>
+        <MainLink style={style} href="/">
+          {text}
+        </MainLink>
       )}
     </React.Fragment>
   );

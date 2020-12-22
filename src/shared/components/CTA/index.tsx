@@ -6,15 +6,15 @@ const CallToAction = (props: any) => {
   return (
     <React.Fragment>
       {white ? (
-        <CtaWhite className="cta" style={style}>
+        <CtaWhite className="cta" style={style} href="/">
           {text}
         </CtaWhite>
       ) : !white && bluecta ? (
-        <CtaBlue className="cta" style={style}>
+        <CtaBlue className="cta" style={style} href="/">
           {text}
         </CtaBlue>
       ) : (
-        <CtaGreen className="cta" style={style}>
+        <CtaGreen className="cta" style={style} href="/">
           {text}
         </CtaGreen>
       )}

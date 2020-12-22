@@ -87,6 +87,7 @@ export default createGlobalStyle`
 	a {
 		display: inline-block;
 		cursor: pointer;
+		text-decoration: none;
 	}
 
 	h1,
