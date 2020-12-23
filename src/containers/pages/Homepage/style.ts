@@ -225,9 +225,40 @@ export const SidePhotoSecond = styled.img`
 
 export const Disney = styled.section`
   padding: 0 260px;
+  margin-bottom: 106px;
 `;
 
 export const CardWrap = styled.div`
   display: flex;
   justify-content: center;
+`;
+
+export const Movies = styled.section`
+  display: flex;
+  position: relative;
+`;
+
+export const MoviesLeft = styled.div`
+  width: 100%;
+  height: 651px;
+  background-color: ${color.blue};
+  clip-path: polygon(0% 0%, 100% 26%, 100% 74%, 0% 100%);
+  position: absolute;
+  left: 0;
+  z-index: -1;
+`;
+
+export const MoviesRight = styled.div`
+  width: 40%;
+  height: 651px;
+  background-color: ${color.yellow};
+  clip-path: polygon(100% 0%, 8% 10%, 0% 90%, 100% 100%);
+  position: absolute;
+  right: 0;
+  z-index: -1;
+`;
+
+export const MovieChoice = styled.div`
+  display: flex;
+  justify-content: space-between;
 `;

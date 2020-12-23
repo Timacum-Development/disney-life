@@ -30,6 +30,10 @@ import {
   SidePhotoSecond,
   Disney,
   CardWrap,
+  Movies,
+  MoviesLeft,
+  MoviesRight,
+  MovieChoice,
 } from "./style";
 
 //Assets
@@ -47,6 +51,13 @@ import Icon2 from "../../../assets/icon-movies.png";
 import Icon3 from "../../../assets/icon-music.png";
 import Icon4 from "../../../assets/icon-books.png";
 import Icon5 from "../../../assets/icon-livetv.png";
+import Movie1 from "../../../assets/movies-herbie.png";
+import Movie2 from "../../../assets/movies-nemo.png";
+import Movie3 from "../../../assets/movies-alice-wonderland.png";
+import Movie4 from "../../../assets/movies-tangled.png";
+import Movie5 from "../../../assets/movies-mermaid.png";
+import Movie6 from "../../../assets/movies-up.png";
+import Movie7 from "../../../assets/movies-lionking.png";
 
 // Components
 import CallToAction from "../../../shared/components/CTA";
@@ -55,6 +66,7 @@ import Rectangle from "../../../shared/components/Rounded renctangle";
 import Logo from "../../../shared/components/Logo";
 import Service from "../../../shared/components/Services";
 import Card from "../../../shared/components/Cards";
+import Movie from "../../../shared/components/Cartoon";
 
 const Homepage = () => {
   return (
@@ -200,6 +212,19 @@ const Homepage = () => {
           <Card iconUrl={Icon5} text="Live TV" />
         </CardWrap>
       </Disney>
+      <Movies>
+        <MoviesLeft></MoviesLeft>
+        <MoviesRight></MoviesRight>
+        <MovieChoice>
+          <Movie movieUrl={Movie1} />
+          <Movie movieUrl={Movie2} />
+          <Movie movieUrl={Movie3} />
+          <Movie movieUrl={Movie4} />
+          <Movie movieUrl={Movie5} />
+          <Movie movieUrl={Movie6} />
+          <Movie movieUrl={Movie7} />
+        </MovieChoice>
+      </Movies>
     </React.Fragment>
   );
 };
