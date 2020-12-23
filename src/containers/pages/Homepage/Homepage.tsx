@@ -28,6 +28,8 @@ import {
   BoldTxt,
   WhiteText,
   SidePhotoSecond,
+  Disney,
+  CardWrap,
 } from "./style";
 
 //Assets
@@ -40,6 +42,11 @@ import Logo4 from "../../../assets/disney-channel.png";
 import Logo5 from "../../../assets/disney-junior.png";
 import SideImg from "../../../assets/side-photo1.png";
 import SideImg2 from "../../../assets/layer-stitch.png";
+import Icon1 from "../../../assets/icon-tvset.png";
+import Icon2 from "../../../assets/icon-movies.png";
+import Icon3 from "../../../assets/icon-music.png";
+import Icon4 from "../../../assets/icon-books.png";
+import Icon5 from "../../../assets/icon-livetv.png";
 
 // Components
 import CallToAction from "../../../shared/components/CTA";
@@ -47,6 +54,7 @@ import BottomText from "../../../shared/components/CTA Bottom Text";
 import Rectangle from "../../../shared/components/Rounded renctangle";
 import Logo from "../../../shared/components/Logo";
 import Service from "../../../shared/components/Services";
+import Card from "../../../shared/components/Cards";
 
 const Homepage = () => {
   return (
@@ -170,6 +178,28 @@ const Homepage = () => {
         </GreenShape>
         <CartoonBg />
       </Cartoon>
+      <Disney>
+        <RectangleWrap>
+          <Rectangle
+            style={{ marginRight: "20px", backgroundColor: "#5f94ff" }}
+          />
+          <Rectangle first style={{ backgroundColor: "#9dcb45" }} />
+        </RectangleWrap>
+        <HeadingWrap>
+          <h2>Discover more Disney.</h2>
+          <h5 className="h5-style">
+            Blockbusters. Classics. Fairytales. Scary Tales. The best of Disney
+            in one app.
+          </h5>
+        </HeadingWrap>
+        <CardWrap>
+          <Card iconUrl={Icon1} text="TV Sets" />
+          <Card iconUrl={Icon2} text="Movies" />
+          <Card iconUrl={Icon3} text="Music" />
+          <Card iconUrl={Icon4} text="Books" />
+          <Card iconUrl={Icon5} text="Live TV" />
+        </CardWrap>
+      </Disney>
     </React.Fragment>
   );
 };

@@ -155,5 +155,17 @@ export default createGlobalStyle`
 		margin-bottom: 28px;
 	}
 
+	.h5-style {
+		max-width: 461px;
+		margin: 0 auto;
+		line-height: 1.7;
+	}
+
+	.box {
+		width: 26px;
+  		height: 26px;	
+  		position: absolute;
+	}
+
 
 `;

@@ -173,6 +173,7 @@ export const CtaWrapper = styled.div`
 export const Cartoon = styled.section`
   display: flex;
   position: relative;
+  margin-bottom: 81px;
 `;
 
 export const GreenShape = styled.div`
@@ -180,7 +181,7 @@ export const GreenShape = styled.div`
   justify-content: center;
   align-items: center;
   width: 761px;
-  height: 661px;
+  width: 41%;
   background-color: ${color.green};
   clip-path: polygon(0% 0%, 85% 10%, 100% 90%, 0% 100%);
 `;
@@ -220,4 +221,13 @@ export const SidePhotoSecond = styled.img`
   top: -200px;
   z-index: 50;
   filter: drop-shadow(0 5px 5px ${color.black});
+`;
+
+export const Disney = styled.section`
+  padding: 0 260px;
+`;
+
+export const CardWrap = styled.div`
+  display: flex;
+  justify-content: center;
 `;
