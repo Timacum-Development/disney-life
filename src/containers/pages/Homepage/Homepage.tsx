@@ -34,6 +34,12 @@ import {
   MoviesLeft,
   MoviesRight,
   MovieChoice,
+  SidePhotoThird,
+  PlayWrap,
+  ArrowWrap,
+  ArrowRight,
+  ArrowLeft,
+  PlayBtn,
 } from "./style";
 
 //Assets
@@ -46,6 +52,7 @@ import Logo4 from "../../../assets/disney-channel.png";
 import Logo5 from "../../../assets/disney-junior.png";
 import SideImg from "../../../assets/side-photo1.png";
 import SideImg2 from "../../../assets/layer-stitch.png";
+import SideImg3 from "../../../assets/layer2.png";
 import Icon1 from "../../../assets/icon-tvset.png";
 import Icon2 from "../../../assets/icon-movies.png";
 import Icon3 from "../../../assets/icon-music.png";
@@ -58,6 +65,7 @@ import Movie4 from "../../../assets/movies-tangled.png";
 import Movie5 from "../../../assets/movies-mermaid.png";
 import Movie6 from "../../../assets/movies-up.png";
 import Movie7 from "../../../assets/movies-lionking.png";
+import Play from "../../../assets/play-button.png";
 
 // Components
 import CallToAction from "../../../shared/components/CTA";
@@ -213,7 +221,15 @@ const Homepage = () => {
         </CardWrap>
       </Disney>
       <Movies>
-        <MoviesLeft></MoviesLeft>
+        <MoviesLeft>
+          <PlayWrap>
+            <ArrowWrap>
+              <ArrowLeft />
+              <ArrowRight />
+            </ArrowWrap>
+          </PlayWrap>
+        </MoviesLeft>
+        <PlayBtn src={Play} />
         <MoviesRight></MoviesRight>
         <MovieChoice>
           <Movie movieUrl={Movie1} />
@@ -224,6 +240,7 @@ const Homepage = () => {
           <Movie movieUrl={Movie6} />
           <Movie movieUrl={Movie7} />
         </MovieChoice>
+        <SidePhotoThird src={SideImg3} />
       </Movies>
     </React.Fragment>
   );

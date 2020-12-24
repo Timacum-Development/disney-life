@@ -225,7 +225,7 @@ export const SidePhotoSecond = styled.img`
 
 export const Disney = styled.section`
   padding: 0 260px;
-  margin-bottom: 106px;
+  margin-bottom: 260px;
 `;
 
 export const CardWrap = styled.div`
@@ -236,6 +236,8 @@ export const CardWrap = styled.div`
 export const Movies = styled.section`
   display: flex;
   position: relative;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const MoviesLeft = styled.div`
@@ -261,4 +263,72 @@ export const MoviesRight = styled.div`
 export const MovieChoice = styled.div`
   display: flex;
   justify-content: space-between;
+`;
+
+export const SidePhotoThird = styled.img`
+  display: block;
+  position: absolute;
+  right: 74px;
+  top: -140%;
+`;
+
+export const PlayWrap = styled.div`
+  position: absolute;
+  bottom: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+`;
+
+export const ArrowWrap = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+export const ArrowLeft = styled.div`
+  width: 61px;
+  height: 2px;
+  margin-right: 40px;
+  background-color: ${color.white};
+  position: relative;
+
+  &:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -2px;
+    border-top: 15px solid ${color.white};
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid transparent;
+  }
+`;
+
+export const ArrowRight = styled.div`
+  width: 61px;
+  height: 2px;
+  background-color: ${color.white};
+  opacity: 0.25;
+
+  position: relative;
+
+  &:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 0;
+    border-top: 15px solid ${color.white};
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid transparent;
+  }
+`;
+
+export const PlayBtn = styled.img`
+  display: block;
+  width: 131px;
+  height: 131px;
+  position: absolute;
+  bottom: -50px;
+  z-index: 50;
+  right: 30%;
 `;
