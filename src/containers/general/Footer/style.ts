@@ -47,6 +47,6 @@ export const FooterInfo = styled.div`
   align-items: center; */
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 35%;
   transform: translateX(-50%);
 `;
