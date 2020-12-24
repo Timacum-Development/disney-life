@@ -40,6 +40,11 @@ import {
   ArrowRight,
   ArrowLeft,
   PlayBtn,
+  Watch,
+  WatchWrap,
+  Digital,
+  DigitalText,
+  DigitalTxtWrap,
 } from "./style";
 
 //Assets
@@ -66,6 +71,7 @@ import Movie5 from "../../../assets/movies-mermaid.png";
 import Movie6 from "../../../assets/movies-up.png";
 import Movie7 from "../../../assets/movies-lionking.png";
 import Play from "../../../assets/play-button.png";
+import IconDevices from "../../../assets/icon-devices.png";
 
 // Components
 import CallToAction from "../../../shared/components/CTA";
@@ -242,6 +248,37 @@ const Homepage = () => {
         </MovieChoice>
         <SidePhotoThird src={SideImg3} />
       </Movies>
+      <Watch>
+        <WatchWrap>
+          <Digital src={IconDevices} />
+          <DigitalText>
+            <DigitalTxtWrap>
+              <h4>Watch on the GO.</h4>
+              <Rectangle
+                first
+                style={{
+                  backgroundColor: "#ff4b64",
+                  marginLeft: "22px",
+                  position: "relative",
+                  top: "10px",
+                }}
+              />
+            </DigitalTxtWrap>
+            <h6>
+              Available on all Apple, Android and Amazon devices. Enjoy on TV,
+              desktop, tablet and mobile.
+            </h6>
+            <Rectangle style={{ backgroundColor: "#ffca2a" }} />
+          </DigitalText>
+        </WatchWrap>
+        <CtaWrapper className="cta-wrap">
+          <CallToAction
+            text="Subscribe for free trial"
+            style={{ marginBottom: "28px" }}
+          />
+          <BottomText text="Now only £4.99 per month." />
+        </CtaWrapper>
+      </Watch>
     </React.Fragment>
   );
 };

@@ -225,7 +225,7 @@ export const SidePhotoSecond = styled.img`
 
 export const Disney = styled.section`
   padding: 0 260px;
-  margin-bottom: 260px;
+  margin-bottom: 280px;
 `;
 
 export const CardWrap = styled.div`
@@ -238,6 +238,7 @@ export const Movies = styled.section`
   position: relative;
   justify-content: center;
   align-items: center;
+  margin-bottom: 260px;
 `;
 
 export const MoviesLeft = styled.div`
@@ -308,7 +309,6 @@ export const ArrowRight = styled.div`
   height: 2px;
   background-color: ${color.white};
   opacity: 0.25;
-
   position: relative;
 
   &:after {
@@ -331,4 +331,28 @@ export const PlayBtn = styled.img`
   bottom: -50px;
   z-index: 50;
   right: 30%;
+`;
+
+export const Watch = styled.section``;
+
+export const WatchWrap = styled.div`
+  display: flex;
+  align-items: center;
+  max-width: 650px;
+  margin: 0 auto;
+`;
+
+export const Digital = styled.img`
+  display: block;
+  width: 157px;
+  height: 97px;
+  margin-right: 48px;
+`;
+
+export const DigitalText = styled.div`
+  max-width: 504px;
+`;
+
+export const DigitalTxtWrap = styled.div`
+  display: Flex;
 `;

@@ -122,6 +122,10 @@ export default createGlobalStyle`
 
 	h4 {
 		font-size: 2.1875rem;
+		font-family: 'Gotham', sans;
+		font-weight: bold;
+		margin-bottom: 28px;
+
 	}
 
 	h5 {
@@ -133,7 +137,10 @@ export default createGlobalStyle`
 
 	h6 {
 		font-size: 1.0625rem;
+		font-family: 'Gotham Book', sans;
 		color: ${color.darkGrey};
+		line-height: 1.8;
+		margin-bottom: 26px;
 	}
 
 	.cta {
@@ -165,6 +172,10 @@ export default createGlobalStyle`
 		width: 26px;
   		height: 26px;	
   		position: absolute;
+	}
+
+	.cta-wrap {
+		margin-top: 214px;
 	}
 
 
