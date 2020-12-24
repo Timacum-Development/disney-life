@@ -235,8 +235,10 @@ const Homepage = () => {
             </ArrowWrap>
           </PlayWrap>
         </MoviesLeft>
-        <PlayBtn src={Play} />
-        <MoviesRight></MoviesRight>
+        <a href="/">
+          <PlayBtn src={Play} />
+        </a>
+        <MoviesRight />
         <MovieChoice>
           <Movie movieUrl={Movie1} />
           <Movie movieUrl={Movie2} />

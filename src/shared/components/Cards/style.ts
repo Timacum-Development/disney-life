@@ -1,13 +1,31 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { color } from "../../styles";
+
+// export const CardHover = keyframes`
+//   0%{
+//     background-color: none;
+//   }
+
+//   100%{
+//     background-color: ${color.blue};
+//     opacity: 0.07;
+//   }
+// `;
 
 export const DisneyCard = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   width: 20%;
-  padding: 45px 0;
   position: relative;
+  padding: 45px 0;
+  transition: 0.25s;
+
+  &:hover {
+    background-color: rgba(95, 148, 255, 0.1);
+    position: relative;
+    z-index: -1;
+  }
 `;
 
 export const CardIcon = styled.img`

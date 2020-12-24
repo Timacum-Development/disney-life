@@ -1,9 +1,19 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { color } from "../../../shared/styles";
 
 import Device1 from "../../../assets/ipad3.png";
 import Device2 from "../../../assets/iphone2.png";
 import GingerGirl from "../../../assets/ginger-girl.png";
+
+export const TextAnimation = keyframes`
+  0% {
+    transform: translateY(-800px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+`;
 
 export const Hero = styled.section`
   display: flex;
@@ -92,6 +102,7 @@ export const IphoneImg = styled.img`
 export const HeroIntro = styled.div`
   width: 45%;
   margin-left: 30px;
+  animation: ${TextAnimation} 1.7s ease-out forwards;
 `;
 
 export const SubscribeWrap = styled.div`
@@ -149,8 +160,7 @@ export const Offer = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin: 0 auto;
-  padding: 0 260px 0;
+  padding: 0 200px 0 340px;
   margin-bottom: 81px;
 `;
 
@@ -331,6 +341,11 @@ export const PlayBtn = styled.img`
   bottom: -50px;
   z-index: 50;
   right: 30%;
+
+  &:hover {
+    border: 10px solid ${color.lightGrey};
+    border-radius: 50%;
+  }
 `;
 
 export const Watch = styled.section``;
