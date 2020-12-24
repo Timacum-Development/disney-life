@@ -10,5 +10,8 @@ export const HeaderLink = styled.a`
 
 export const MainLink = styled.a`
   font-size: 0.875rem;
-  color: ${color.white};
+  font-family: "Gotham", sans;
+  font-weight: 600;
+  color: ${color.justGrey};
+  margin-right: 10px;
 `;

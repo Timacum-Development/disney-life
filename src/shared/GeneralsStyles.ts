@@ -178,5 +178,32 @@ export default createGlobalStyle`
 		margin-top: 214px;
 	}
 
+	ul {
+		padding: 0;
+		margin: 0;
+		display: flex;
+		margin-bottom: 42px;
+	}
+
+	li {
+		list-style-type: none;
+		margin-right: 20px;
+		position: relative;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&:after {
+			content: '';
+			width: 5px;
+			height: 5px;
+			border-radius: 50%;
+			background-color: ${color.justGrey};
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
 
 `;

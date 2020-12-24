@@ -7,7 +7,7 @@ import Logo1 from "../../../assets/disney-logo.png";
 import Logo2 from "../../../assets/logo-smaller.png";
 
 const Logo = (props: any) => {
-  const { headerlogo, channel, logoUrl } = props;
+  const { headerlogo, channel, logoUrl, style } = props;
   return (
     <React.Fragment>
       {headerlogo ? (
@@ -15,7 +15,7 @@ const Logo = (props: any) => {
       ) : !headerlogo && channel ? (
         <ChannelLogo src={logoUrl}></ChannelLogo>
       ) : (
-        <FooterLogo src={Logo2} />
+        <FooterLogo src={Logo2} style={style} />
       )}
     </React.Fragment>
   );
