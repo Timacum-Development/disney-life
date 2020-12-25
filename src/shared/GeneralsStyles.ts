@@ -206,4 +206,11 @@ export default createGlobalStyle`
 		}
 	}
 
+	small {
+		font-size: 0.75rem;
+		font-family: 'Gotham', sans;
+		font-weight: bold;
+		text-transform: capitalize;
+		color: ${color.justGrey};
+	}
 `;

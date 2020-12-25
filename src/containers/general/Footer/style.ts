@@ -50,3 +50,10 @@ export const FooterInfo = styled.div`
   top: 35%;
   transform: translateX(-50%);
 `;
+
+export const CopyRight = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+`;

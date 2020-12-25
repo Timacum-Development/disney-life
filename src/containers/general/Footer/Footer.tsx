@@ -6,6 +6,7 @@ import {
   FooterYellow,
   SidePhotoLayer,
   FooterInfo,
+  CopyRight,
 } from "./style";
 
 // Assets
@@ -48,14 +49,16 @@ const Footer = () => {
             <Link text="Cookies Policy" />
           </li>
         </ul>
-        <a href="/">
-          <Logo
-            style={{
-              position: "absolute",
-              left: "40%",
-            }}
-          />
-        </a>
+        <CopyRight>
+          <a href="/">
+            <Logo
+              style={{
+                marginBottom: "15px",
+              }}
+            />
+          </a>
+          <small>© 2017 Disney. All rights & copyrights reserved.</small>
+        </CopyRight>
       </FooterInfo>
     </FooterWrap>
   );
