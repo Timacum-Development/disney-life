@@ -5,13 +5,17 @@ import Device1 from "../../../assets/ipad3.png";
 import Device2 from "../../../assets/iphone2.png";
 import GingerGirl from "../../../assets/ginger-girl.png";
 
-export const TextAnimation = keyframes`
+export const DeviceAnimation = keyframes`
   0% {
-    transform: translateY(-800px);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
   }
 
   100% {
-    transform: translateY(0);
+    opacity: 1;
   }
 `;
 
@@ -102,7 +106,7 @@ export const IphoneImg = styled.img`
 export const HeroIntro = styled.div`
   width: 45%;
   margin-left: 30px;
-  animation: ${TextAnimation} 1.7s ease-out forwards;
+  animation: ${DeviceAnimation} 1s ease-out forwards;
 `;
 
 export const SubscribeWrap = styled.div`
@@ -280,7 +284,7 @@ export const SidePhotoThird = styled.img`
   display: block;
   position: absolute;
   right: 74px;
-  top: -140%;
+  top: -118%;
 `;
 
 export const PlayWrap = styled.div`
@@ -333,6 +337,20 @@ export const ArrowRight = styled.div`
   }
 `;
 
+export const PlayAnimtion = keyframes`
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1.2);
+  }
+`;
+
 export const PlayBtn = styled.img`
   display: block;
   width: 131px;
@@ -340,15 +358,18 @@ export const PlayBtn = styled.img`
   position: absolute;
   bottom: -50px;
   z-index: 50;
-  right: 30%;
+  right: 29%;
 
   &:hover {
-    border: 10px solid ${color.lightGrey};
+    border: 10px solid rgba(255, 255, 255, 0.6);
     border-radius: 50%;
+    animation: ${PlayAnimtion} 0.5s ease-in-out forwards;
   }
 `;
 
-export const Watch = styled.section``;
+export const Watch = styled.section`
+  margin-bottom: 105px;
+`;
 
 export const WatchWrap = styled.div`
   display: flex;

@@ -3,11 +3,11 @@ import { color } from "../../styles";
 
 export const CartoonAnimation = keyframes`
   0% {
-    border: 20px solid ${color.lightRed};
+    transform: scale(1)
   }
 
   100% {
-    border: 20px solid ${color.lightRed};
+    transform: scale(1.1)
   }
 `;
 
@@ -18,12 +18,14 @@ export const CartoonMovie = styled.img`
   margin-right: 20px;
   filter: drop-shadow(0px 5px 10px ${color.black});
   border: 20px solid transparent;
+  transition: all 0.15s ease-in;
 
   &:last-child {
     margin-right: 0;
   }
 
   &:hover {
+    border: 20px solid ${color.lightRed};
     animation: ${CartoonAnimation} 0.5 ease-in forwards;
   }
 `;

@@ -3,12 +3,18 @@ import { color } from "../../styles";
 
 // export const CardHover = keyframes`
 //   0%{
-//     background-color: none;
+//     border-bottom: 3px solid ${color.blue};
+//     transform: translateY(2px);
+//   }
+
+//   50%{
+//     border-bottom: 3px solid ${color.blue};
+//     transform: translateY(2px);
 //   }
 
 //   100%{
-//     background-color: ${color.blue};
-//     opacity: 0.07;
+//     border-bottom: 3px solid ${color.blue};
+//     transform: translateY(2px);
 //   }
 // `;
 
@@ -19,12 +25,14 @@ export const DisneyCard = styled.div`
   width: 20%;
   position: relative;
   padding: 45px 0;
-  transition: 0.25s;
+  transition: all 0.25s;
+  box-sizing: border-box;
 
   &:hover {
     background-color: rgba(95, 148, 255, 0.1);
     position: relative;
     z-index: -1;
+    box-sizing: border-box;
   }
 `;
 

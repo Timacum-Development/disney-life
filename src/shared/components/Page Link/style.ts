@@ -39,4 +39,9 @@ export const MainLink = styled.a`
   font-weight: 600;
   color: ${color.justGrey};
   margin-right: 13px;
+  transition: 0.15s ease-in;
+
+  &:hover {
+    color: ${color.white};
+  }
 `;
