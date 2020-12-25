@@ -199,8 +199,7 @@ export const GreenShape = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 761px;
-  width: 41%;
+  padding: 0 150px 0 100px;
   background-color: ${color.green};
   clip-path: polygon(0% 0%, 85% 10%, 100% 90%, 0% 100%);
 `;
@@ -208,6 +207,7 @@ export const GreenShape = styled.div`
 export const GreenText = styled.div`
   max-width: 405px;
   margin-left: 27px;
+  padding: 140px 0;
 `;
 
 export const BoldTxt = styled.span`
