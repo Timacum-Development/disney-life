@@ -107,6 +107,8 @@ export const HeroIntro = styled.div`
   width: 45%;
   margin-left: 30px;
   animation: ${DeviceAnimation} 1s ease-out forwards;
+  position: relative;
+  left: 100px;
 `;
 
 export const SubscribeWrap = styled.div`
@@ -181,7 +183,7 @@ export const SidePhoto = styled.img`
   display: block;
   position: absolute;
   right: 51px;
-  top: -40%;
+  top: -42%;
 `;
 
 export const CtaWrapper = styled.div`

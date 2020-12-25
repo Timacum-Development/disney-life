@@ -99,7 +99,10 @@ const Homepage = () => {
           </Devices>
         </ShapeWrap>
         <RedShape>
-          <Rectangle first style={{ position: "relative", top: "-70px" }} />
+          <Rectangle
+            first
+            style={{ position: "relative", top: "-70px", left: "100px" }}
+          />
           <HeroIntro>
             <h3>Unlimited Disney Magic.</h3>
             <h1>Cartoons & Movies</h1>
