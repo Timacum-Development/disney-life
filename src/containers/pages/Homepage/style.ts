@@ -190,6 +190,9 @@ export const CtaWrapper = styled.div`
 `;
 
 export const Cartoon = styled.section`
+  width: 100%;
+  padding-bottom: 33.25%;
+  height: 0;
   display: flex;
   position: relative;
   margin-bottom: 81px;
@@ -199,9 +202,11 @@ export const GreenShape = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 150px 0 100px;
+  width: 48%;
   background-color: ${color.green};
-  clip-path: polygon(0% 0%, 85% 10%, 100% 90%, 0% 100%);
+  clip-path: polygon(0% 0%, 87% 10%, 100% 90%, 0% 100%);
+  position: absolute;
+  left: 0;
 `;
 
 export const GreenText = styled.div`
@@ -226,11 +231,13 @@ export const WhiteText = styled.p`
 
 export const CartoonBg = styled.div`
   width: 1112px;
-  height: 664px;
+  height: 0;
+  padding-bottom: 35.25%;
   background: url(${GingerGirl}) no-repeat top;
-  background-position: cover;
-  background-size: center;
-  clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 80%);
+  clip-path: polygon(0% 17%, 100% 0%, 100% 100%, 0% 80%);
+  position: absolute;
+  right: 0;
+  z-index: -1;
 `;
 
 export const SidePhotoSecond = styled.img`
