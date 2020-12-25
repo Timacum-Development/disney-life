@@ -3,11 +3,11 @@ import { color } from "../../../shared/styles";
 
 export const HeaderAnimation = keyframes`
   0% {
-    transform: translateX(-1000px);
+    opacity: 0;
   }
 
   100% {
-    transform: translateX(0px);
+    opacity: 1;
   }
 `;
 
@@ -18,7 +18,7 @@ export const HeaderWrapper = styled.header`
   padding: 49px 260px 0;
   position: relative;
   z-index: 10;
-  animation: ${HeaderAnimation} 1.5s ease-out forwards;
+  animation: ${HeaderAnimation} 1s ease-out forwards;
 `;
 
 export const InsideWrap = styled.div`
