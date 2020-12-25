@@ -20,7 +20,7 @@ export const ServiceText = styled.p`
   display: inline;
   font-size: 1.0625rem;
   font-family: "Gotham Book", sans;
-  ont-weight: normal;
+  font-weight: normal;
 `;
 
 export const BoldFirst = styled.span`
