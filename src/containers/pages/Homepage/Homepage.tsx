@@ -148,19 +148,34 @@ const Homepage = () => {
         <Slider />
         <Offer>
           <OfferCard>
-            <Service text="The biggest collection of cartoons & movies" />
-            <Service text="The exclusive home of Disney kids TV box sets" />
-            <Service text="Live TV from Disney Channel, XD and Junior" />
+            <Service
+              bold="The biggest collection&nbsp;"
+              text="of cartoons & movies"
+            />
+            <Service
+              text="The exclusive home of&nbsp;"
+              boldSecond="Disney kids TV box sets"
+            />
+            <Service
+              text="Live TV from&nbsp;"
+              boldSecond='Disney Channel, XD and Junior"'
+            />
           </OfferCard>
           <OfferCard>
-            <Service text="Unlimited downloads" />
-            <Service text="Access on 10 compatible devices" />
-            <Service text="Watch on TV, desktop, tablet and mobile" />
+            <Service text="Unlimited&nbsp;" boldSecond="downloads" />
+            <Service
+              text="Access on&nbsp;"
+              boldSecond="10 compatible devices"
+            />
+            <Service
+              text="Watch on&nbsp;"
+              boldSecond="TV, desktop, tablet and mobile"
+            />
           </OfferCard>
           <OfferCard>
-            <Service text="10% discount at Disney Store" />
-            <Service text="No contract subscription" />
-            <Service text="Appropriate for 1+ of age" />
+            <Service bold="10% discount&nbsp;" text=" at Disney Store" />
+            <Service bold="No contract&nbsp;" text="subscription" />
+            <Service text="Appropriate for&nbsp;" boldSecond="1+ of age" />
           </OfferCard>
         </Offer>
         <SidePhoto src={SideImg} />

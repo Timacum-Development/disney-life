@@ -36,7 +36,6 @@ export const DisneyCard = styled.div`
   &:hover {
     background-color: rgba(95, 148, 255, 0.1);
     border-bottom: 3px solid ${color.blue};
-    box-sizing: border-box;
 
     &:before {
       display: block;

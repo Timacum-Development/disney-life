@@ -1,14 +1,18 @@
 import React from "react";
-import { WeOffer, MouseImg, ServiceText } from "./style";
+import { WeOffer, MouseImg, ServiceText, BoldFirst, BoldSecond } from "./style";
 
 import IconMouse from "../../../assets/icon-mouse.png";
 
 const Service = (props: any) => {
-  const { text } = props;
+  const { text, bold, boldSecond } = props;
   return (
     <WeOffer>
       <MouseImg src={IconMouse} />
-      <ServiceText>{text}</ServiceText>
+      <div>
+        <BoldFirst>{bold}</BoldFirst>
+        <ServiceText>{text}</ServiceText>
+        <BoldSecond>{boldSecond}</BoldSecond>
+      </div>
     </WeOffer>
   );
 };

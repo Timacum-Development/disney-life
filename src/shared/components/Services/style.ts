@@ -17,7 +17,20 @@ export const MouseImg = styled.img`
   margin-right: 15px;
 `;
 export const ServiceText = styled.p`
+  display: inline;
   font-size: 1.0625rem;
   font-family: "Gotham Book", sans;
   ont-weight: normal;
+`;
+
+export const BoldFirst = styled.span`
+  font-size: 1.0625rem;
+  font-family: "Gotham", sans;
+  font-weight: bold;
+`;
+
+export const BoldSecond = styled.span`
+  font-size: 1.0625rem;
+  font-family: "Gotham", sans;
+  font-weight: bold;
 `;

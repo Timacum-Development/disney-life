@@ -164,12 +164,17 @@ export const Offer = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 0 200px 0 340px;
+  padding-left: 260px;
   margin-bottom: 81px;
 `;
 
 export const OfferCard = styled.div`
   width: 33.33%;
+  margin-right: 90px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 `;
 
 export const SidePhoto = styled.img`
