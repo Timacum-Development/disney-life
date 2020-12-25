@@ -1,23 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import { color } from "../../styles";
 
-// export const CardHover = keyframes`
-//   0%{
-//     border-bottom: 3px solid ${color.blue};
-//     transform: translateY(2px);
-//   }
-
-//   50%{
-//     border-bottom: 3px solid ${color.blue};
-//     transform: translateY(2px);
-//   }
-
-//   100%{
-//     border-bottom: 3px solid ${color.blue};
-//     transform: translateY(2px);
-//   }
-// `;
-
 export const DisneyCard = styled.div`
   display: flex;
   justify-content: center;
@@ -26,7 +9,7 @@ export const DisneyCard = styled.div`
   position: relative;
   padding: 45px 0;
   transition: background-color 0.25s ease-in-out;
-  box-sizing: border-box;
+  border-bottom: 3px solid transparent;
 
   &:before {
     content: "";
@@ -65,20 +48,6 @@ export const DisneyCard = styled.div`
   }
 `;
 
-// export const BlueBox = styled.div`
-//   width: 100%;
-//   height: 26px;
-//   border: 3px solid ${color.blue};
-//   border-bottom: none;
-//   position: absolute;
-//   bottom: -26px;
-//   display: none;
-
-//   &:hover {
-//     display: block;
-//   }
-// `;
-
 export const CardIcon = styled.img`
   display: block;
   width: auto;
@@ -89,10 +58,16 @@ export const CardIcon = styled.img`
 export const CardText = styled.p`
   font-size: 0.875rem;
   font-family: "Gotham", sans;
+  font-weight: bold;
   color: ${color.darkerGrey};
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-top: 20px;
+  transition: 0.25s ease-in-out;
+
+  &:hover {
+    color: ${color.black};
+  }
 `;
 
 export const BoxLeft = styled.div`
