@@ -54,7 +54,7 @@ export const CardIcon = styled.img`
   margin: 0 auto;
 `;
 
-export const CardText = styled.p`
+export const CardText = styled.a`
   font-size: 0.875rem;
   font-family: "Gotham", sans;
   font-weight: bold;
