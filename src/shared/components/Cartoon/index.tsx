@@ -3,7 +3,11 @@ import { CartoonMovie } from "./style";
 
 const Movie = (props: any) => {
   const { movieUrl } = props;
-  return <CartoonMovie src={movieUrl} />;
+  return (
+    <a href="/">
+      <CartoonMovie src={movieUrl} />
+    </a>
+  );
 };
 
 export default Movie;

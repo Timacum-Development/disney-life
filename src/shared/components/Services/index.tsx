@@ -1,7 +1,7 @@
 import React from "react";
 import { WeOffer, MouseImg, ServiceText, BoldFirst, BoldSecond } from "./style";
 
-import IconMouse from "../../../assets/icon-mouse.png";
+import IconMouse from "../../../assets/micky-mouse.png";
 
 const Service = (props: any) => {
   const { text, bold, boldSecond } = props;

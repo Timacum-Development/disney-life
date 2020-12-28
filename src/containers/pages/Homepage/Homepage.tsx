@@ -118,7 +118,7 @@ const Homepage = () => {
           </HeroIntro>
         </RedShape>
       </Hero>
-      <Subscription>
+      <Subscription className="container">
         <RectangleWrap>
           <Rectangle
             style={{ marginRight: "20px", backgroundColor: "#ff4b64" }}
@@ -200,6 +200,7 @@ const Homepage = () => {
               backgroundColor: "#ff4b64",
               position: "relative",
               top: "-100px",
+              marginRight: "27px",
             }}
           />
           <GreenText>
@@ -248,8 +249,12 @@ const Homepage = () => {
         <MoviesLeft>
           <PlayWrap>
             <ArrowWrap>
-              <ArrowLeft />
-              <ArrowRight />
+              <a href="/">
+                <ArrowLeft />
+              </a>
+              <a href="/">
+                <ArrowRight />
+              </a>
             </ArrowWrap>
           </PlayWrap>
         </MoviesLeft>
@@ -268,7 +273,7 @@ const Homepage = () => {
         </MovieChoice>
         <SidePhotoThird src={SideImg3} />
       </Movies>
-      <Watch>
+      <Watch className="container">
         <WatchWrap>
           <Digital src={IconDevices} />
           <DigitalText>

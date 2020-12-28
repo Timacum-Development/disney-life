@@ -62,7 +62,7 @@ export default createGlobalStyle`
 	}
 
 	.container {
-		max-width: 1800px;
+		max-width: 1285px;
 		width: 100%;
 		margin: 0 auto;
 	}

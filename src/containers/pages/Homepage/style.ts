@@ -166,24 +166,18 @@ export const Offer = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding-left: 260px;
   margin-bottom: 81px;
 `;
 
 export const OfferCard = styled.div`
-  width: 33.33%;
-  margin-right: 90px;
-
-  &:last-child {
-    margin-right: 0;
-  }
+  max-width: 460px;
 `;
 
 export const SidePhoto = styled.img`
   display: block;
   position: absolute;
-  right: 51px;
-  top: -42%;
+  right: -235px;
+  top: -43%;
 `;
 
 export const CtaWrapper = styled.div`
@@ -213,7 +207,6 @@ export const GreenShape = styled.div`
 
 export const GreenText = styled.div`
   max-width: 405px;
-  margin-left: 27px;
   padding: 140px 0;
 `;
 
@@ -246,7 +239,7 @@ export const SidePhotoSecond = styled.img`
   display: block;
   position: absolute;
   left: 136px;
-  top: -200px;
+  top: -210px;
   z-index: 50;
   filter: drop-shadow(0 5px 5px ${color.black});
 `;

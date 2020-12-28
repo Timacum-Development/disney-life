@@ -6,7 +6,7 @@ import Link from "../../../shared/components/Page Link";
 import CallToAction from "../../../shared/components/CTA";
 
 // Assets
-import LogIn from "../../../assets/login2.png";
+import LogIn from "../../../assets/login3.png";
 
 const Header = () => {
   return (
