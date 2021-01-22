@@ -1,5 +1,4 @@
-import styled, { keyframes } from "styled-components";
-import { color } from "../../../shared/styles";
+import styled, { keyframes } from 'styled-components';
 
 export const HeaderAnimation = keyframes`
   0% {
@@ -12,23 +11,23 @@ export const HeaderAnimation = keyframes`
 `;
 
 export const HeaderWrapper = styled.header`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 49px 260px 0;
-  position: relative;
-  z-index: 10;
-  animation: ${HeaderAnimation} 1s ease-out forwards;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 49px 260px 0;
+	position: relative;
+	z-index: 10;
+	animation: ${HeaderAnimation} 1s ease-out forwards;
 `;
 
 export const InsideWrap = styled.div`
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 `;
 
 export const Login = styled.img`
-  display: block;
-  width: 43px;
-  height: 43px;
-  margin-right: 49px;
+	display: block;
+	width: 43px;
+	height: 43px;
+	margin-right: 49px;
 `;
